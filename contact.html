@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - University Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* h1 {
+            text-align: center;
+        }
+        .contact-info {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        } */
+      h2 {
+        text-align: center;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      textarea {
+        resize: vertical; /* Allows vertical resizing of the textarea */
+      }
+
+      input[type="submit"] {
+        background-color: #007bff; /* Customize button background color */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3; /* Change button color on hover */
+      }
+
+      /* Optional: Style for form validation error messages */
+      .error-message {
+        color: #ff0000;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Contact Us</h1>
+
+    <div class="contact-info">
+        <h2>Library Contact Information</h2>
+        <p><strong>Address:</strong> 123 University Avenue, City, Country</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> library@example.edu</p>
+    </div> -->
+    <header>
+      <h1>Makerere University Library</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h2>Contact Form</h2>
+    <form action="process_contact.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <footer>
+        <p>&copy; 2023 Makerere University Library. All rights reserved.</p>
+      </footer>
+  </body>
+</html>
